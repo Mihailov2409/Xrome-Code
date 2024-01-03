@@ -1,0 +1,38 @@
+<Button>:
+    font_name: "JetBrainsMono-Bold.ttf"
+<Codeinput>:
+    font_name: "JetBrainsMono-Bold.ttf"
+<TextInput>:
+    font_name: "JetBrainsMono-Bold.ttf"
+<Label>
+    font_name: "JetBrainsMono-Bold.ttf"
+ScreenManager:
+    id: screen_manager
+    Screen:
+        id: main
+        name: 'main'
+        BoxLayout:
+            Button:
+                pos_hint: {'top': 1}
+                text: "file"
+                size_hint: 0.3,0.05
+                font_size: 20
+                background_color: 25/255, 25/255, 25/255
+                on_press:
+                    app.file_open_setting()
+            Button:
+                pos_hint: {'top': 1}
+                size_hint: 0.3,0.05
+                text: "syntax"
+                font_size: 20
+                background_color: 25/255, 25/255, 25/255
+                on_press:
+                    app.language_or()
+            Button:
+                pos_hint: {'top': 1}
+                size_hint: 0.3,0.05
+                text: "save & tools"
+                font_size: 20
+                background_color: 25/255, 25/255, 25/255
+                on_press:
+                    app.save_fail_window()
